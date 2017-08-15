@@ -7,6 +7,7 @@ import { ItemService } from "./item/item.service";
 import { ItemsComponent } from "./item/items.component";
 import { ItemDetailComponent } from "./item/item-detail.component";
 import { LoginComponent } from "./login/login.component";
+import { SignupComponent } from "./signup/signup.component";
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
@@ -26,7 +27,8 @@ import { LoginComponent } from "./login/login.component";
         AppComponent,
         ItemsComponent,
         ItemDetailComponent,
-        LoginComponent
+        LoginComponent,
+        SignupComponent
     ],
     providers: [
         ItemService
