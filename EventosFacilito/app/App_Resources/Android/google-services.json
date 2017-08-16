@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "248101367396",
+    "firebase_url": "https://eventosfacilito-20697.firebaseio.com",
+    "project_id": "eventosfacilito-20697",
+    "storage_bucket": "eventosfacilito-20697.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248101367396:android:7a4a8fd5f436657c",
+        "android_client_info": {
+          "package_name": "com.codigofacilito.EventosFacilito"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "248101367396-je768ar4spgnt522oro6ddfkt48so4g8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOglL920SCU81I3rGeJyKyksXaQ2f5TMs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
