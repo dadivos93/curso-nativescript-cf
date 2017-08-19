@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import firebase = require('nativescript-plugin-firebase');
 
 @Component({
     selector: "ns-signup",
@@ -17,8 +18,20 @@ export class SignupComponent implements OnInit {
     }
 
     signUp() {
-        console.log("Password: " + this.password);
-        console.log("Password confirmation: " + this.passwordConfirmation);
-        console.log("Email: " + this.email);
+        if (this.password !== this.passwordConfirmation) {
+            return this.error = "No coinciden las contraseñas";
+        }
+
+        this.error = "";
+
+        firebase.createUser({
+            email: this.email,
+            password: this.password
+        }).then(result => {
+            console.log("Resultado de la autenticación" + JSON.stringify(result));
+        }).catch(err => {
+            this.error = JSON.stringify(err);
+            console.log(err);
+        });
     }
 }

@@ -1,6 +1,8 @@
 <ActionBar title="Crea una cuenta" class="action-bar"></ActionBar>
 
 <FlexboxLayout flexDirection="column" class="registration-form" alignItems="center">
+    <Label [text]="error"></Label>
+
     <Label text="Email"></Label>
     <TextField hint="Correo eletrónico" keyboardType="email" [(ngModel)]="email"></TextField>
 
