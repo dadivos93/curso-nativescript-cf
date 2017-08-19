@@ -1,11 +1,11 @@
 <ActionBar title="Ingresa a tu cuenta" class="action-bar"></ActionBar>
 
-<FlexboxLayout flexDirection="column" class="login" alignItems="center" justifyContent="center">
+<FlexboxLayout flexDirection="column" class="registration-form" alignItems="center">
     <Label text="Email"></Label>
-    <TextField></TextField>
+    <TextField keyboardType="email"></TextField>
 
     <Label text="Contraseña"></Label>
-    <TextField></TextField>
+    <TextField secure="true"></TextField>
 
     <Button text="Ingresar a tu cuenta" class="btn-primary"></Button>
     <Button text="Registro" class="btn-flat" (tap)="goToSignUp()"></Button>

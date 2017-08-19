@@ -20,8 +20,17 @@ $btn-color-inverse: #eee;
     border-width: 1;
 }
 
-.login {
+.registration-form {
     padding: 1em;
+    margin-top: 80px;
+    TextField {
+        margin-bottom: 15px;
+        border-color: #eee;
+        border-bottom-width: 2;
+    }
+    Button {
+        margin-bottom: 15px;
+    }
     * {
         width: 80%;
     }
