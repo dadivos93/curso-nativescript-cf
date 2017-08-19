@@ -2,14 +2,13 @@
 
 <FlexboxLayout flexDirection="column" class="registration-form" alignItems="center">
     <Label text="Email"></Label>
-    <TextField hint="Correo eletrónico" keyboardType="email"></TextField>
+    <TextField hint="Correo eletrónico" keyboardType="email" [(ngModel)]="email"></TextField>
 
     <Label text="Contraseña"></Label>
-    <TextField hint="Contraseña de al menos 6 caracteres" secure="true"></TextField>
+    <TextField hint="Contraseña de al menos 6 caracteres" secure="true" [(ngModel)]="password"></TextField>
 
     <Label text="Confirmar contraseña"></Label>
-    <TextField hint="Confirma tu contraseña" secure="true"></TextField>
+    <TextField hint="Confirma tu contraseña" secure="true" [(ngModel)]="passwordConfirmation"></TextField>
 
-    <Button text="Ingresar a tu cuenta" class="btn-primary"></Button>
-    <Button text="Registro" class="btn-flat" (tap)="goToSignUp()"></Button>
+    <Button text="Crear cuenta" (tap)="signUp()" class="btn-primary"></Button>
 </FlexboxLayout>

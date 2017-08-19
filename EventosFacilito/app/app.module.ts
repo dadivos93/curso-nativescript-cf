@@ -10,7 +10,7 @@ import { LoginComponent } from "./login/login.component";
 import { SignupComponent } from "./signup/signup.component";
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
-// import { NativeScriptFormsModule } from "nativescript-angular/forms";
+import { NativeScriptFormsModule } from "nativescript-angular/forms";
 
 // Uncomment and add to NgModule imports  if you need to use the HTTP wrapper
 // import { NativeScriptHttpModule } from "nativescript-angular/http";
@@ -21,7 +21,8 @@ import { SignupComponent } from "./signup/signup.component";
     ],
     imports: [
         NativeScriptModule,
-        AppRoutingModule
+        AppRoutingModule,
+        NativeScriptFormsModule
     ],
     declarations: [
         AppComponent,
